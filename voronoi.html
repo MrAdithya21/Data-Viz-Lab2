@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voronoi Diagram Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f06, #48f);
+            color: #fff;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 36px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #eee;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+            transition: transform 0.4s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        .diagram-container {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            margin: 20px auto;
+            width: 60%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .diagram-container:hover {
+            transform: translateY(-10px);
+        }
+
+        .description {
+            margin: 20px;
+            font-size: 18px;
+            color: #ddd;
+            font-style: italic;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Voronoi Diagram with Deaths and Pumps</h1>
+    
+    <div class="diagram-container">
+        <!-- Add the Voronoi diagram URL here -->
+        <img src="https://drive.google.com/file/d/15nDg15Z28QG4k9mtWPt5Rh7GGT1yv7h7/view?usp=sharing" alt="Voronoi Diagram">
+        <p class="description">This Voronoi diagram visualizes the relationship between pump locations (red dots) and death occurrences (black dots). The cells are created based on the proximity to each pump, demonstrating how the pumps divide the space.</p>
+    </div>
+
+    <h1>Scatter Plot of Deaths and Pumps</h1>
+    
+    <div class="diagram-container">
+        <img src="https://drive.google.com/file/d/1h5VJB8bNg4mLA3Y1Fb2e_ztUADUF9AQ0/view?usp=drive_link" alt="Scatter Plot of Deaths and Pumps">
+        <p class="description">This scatter plot displays the cholera deaths (black dots) and pump locations (red dots). It allows you to see how deaths are spatially distributed in relation to the water pumps.</p>
+    </div>
+
+    <h1>Pump Proximity Analysis</h1>
+    
+    <div class="diagram-container">
+        <img src="https://drive.google.com/file/d/1fRxP3xAFS5hCEgDCs5Xm4qqjUHdNmdMU/view?usp=drive_link" alt="Pump Proximity Analysis">
+        <p class="description">This plot shows the pump proximity with circles representing the zone of influence around each pump. It helps visualize how deaths cluster around each water source, showing the spatial influence of the pumps.</p>
+    </div>
+
+    <footer>
+        © 2024 Voronoi Visuals | Created by Adithya
+    </footer>
+
+</body>
+</html>
